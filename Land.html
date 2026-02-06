@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ShopEasy - Online Shopping</title>
+    <link rel="icon" href="https://static.vecteezy.com/system/resources/previews/010/838/010/non_2x/shopping-cart-icon-logo-illustration-trolley-cart-symbol-template-for-graphic-and-web-design-collection-free-vector.jpg">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+        }
+
+        /* HEADER */
+        header {
+            padding: 25px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(90deg, #ff512f, #dd2476, #667eea);
+        }
+
+        header h1 {
+            font-size: 34px;
+            font-weight: bold;
+            background: linear-gradient(45deg, #fff700, #00ffcc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #fff700;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 70px;
+            color: white;
+        }
+
+        .hero-text {
+            max-width: 50%;
+        }
+
+        .hero-text h2 {
+            font-size: 44px;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, #ffeb3b, #00ffd5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .hero-text button {
+            padding: 14px 32px;
+            font-size: 16px;
+            border: none;
+            border-radius: 30px;
+            background: linear-gradient(135deg, #ff512f, #f09819);
+            color: white;
+            cursor: pointer;
+        }
+
+        .hero-image img {
+            width: 420px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        /* PRODUCTS */
+        .products {
+            background: #f8f8f8;
+            padding: 60px;
+        }
+
+        .products h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 32px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            margin: 15px 0 8px;
+        }
+
+        .card p {
+            font-size: 14px;
+            padding: 0 15px;
+            margin-bottom: 15px;
+        }
+
+        .card button {
+            margin-bottom: 20px;
+            padding: 10px 22px;
+            border: none;
+            border-radius: 20px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            cursor: pointer;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #1c1c1c;
+            color: white;
+            text-align: center;
+            padding: 35px;
+        }
+
+        footer p {
+            margin: 8px 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <h1>ShopEasy</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">Deals</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="hero-text">
+        <h2>Everything You Love, One Click Away</h2>
+        <p>Fashion • Electronic Items • Furnitures • Beauty — Discover amazing deals every day</p>
+        <button><b>Shop Now</b></button>
+    </div>
+
+    <div class="hero-image">
+        <img src="https://img.freepik.com/free-vector/super-sale-banner_60438-1975.jpg" alt="Online Shopping">
+    </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products">
+    <h2>Popular Categories</h2>
+
+    <div class="product-grid">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1521334884684-d80222895322" alt="Fashion">
+            <h3>Fashion</h3>
+            <p>Latest trends & stylish outfits</p>
+            <button>Explore</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9" alt="Electronics">
+            <h3>Electronic Devices</h3>
+            <p>Smartphones, gadgets & accessories</p>
+            <button>Explore</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7" alt="Home">
+            <h3>Home Essentials</h3>
+            <p>Furniture & daily essentials</p>
+            <button>Explore</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348" alt="Beauty">
+            <h3>Beauty</h3>
+            <p>Skincare & beauty products</p>
+            <button>Explore</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p><strong>ShopEasy Online Shopping</strong></p>
+    <p>Email: <a href="file:///C:/Users/Rohith%20B/OneDrive/Documents/task1.html#">support@shopeasy.com</a></p>
+    <p>Contact No: +91 98765 43210</p>
+    <p>© 2026 ShopEas. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
